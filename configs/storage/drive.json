@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "remote": "legislm_drive",
+  "folder_id": "1ViNLdnO7pE0aF_0R4h66FoCz7RsMC6Ko",
+  "remote_data_dir": "data",
+  "batch_gib": 2,
+  "minimum_free_gib": 10,
+  "minimum_age_seconds": 600,
+  "transfers": 2
+}

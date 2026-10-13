@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CheckpointManifest",
+  "type": "object",
+  "required": [
+    "run_id",
+    "checkpoint_id",
+    "schema_version",
+    "global_step",
+    "tokens_seen",
+    "tokens_for_successful_updates",
+    "budget_counter",
+    "segment_id",
+    "config_file_sha256",
+    "scientific_config_hash",
+    "execution_config_hash",
+    "files"
+  ],
+  "properties": {
+    "run_id": {"type": "string"},
+    "checkpoint_id": {"type": "string"},
+    "schema_version": {"type": "integer", "enum": [1]},
+    "global_step": {"type": "integer"},
+    "tokens_seen": {"type": "integer"},
+    "tokens_for_successful_updates": {"type": "integer"},
+    "budget_counter": {"type": "string", "enum": ["successful_update_tokens", "consumed_tokens"]},
+    "segment_id": {"type": "string"},
+    "config_file_sha256": {"type": "string"},
+    "scientific_config_hash": {"type": "string"},
+    "execution_config_hash": {"type": "string"},
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "size_bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string"},
+          "size_bytes": {"type": "integer"},
+          "sha256": {"type": "string"}
+        }
+      }
+    }
+  }
+}

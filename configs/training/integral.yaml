@@ -1,0 +1,43 @@
+# Plano para uma passagem completa pelo split train da release atual.
+# O notebook calcula max_steps a partir das janelas efetivamente tokenizadas
+# antes de iniciar; esta configuração não limita o treino a um piloto curto.
+run_id: "pretraining_legislativo_atual_v1"
+corpus_version: "legislativo_atual_v1"
+split_version: "split_integral_80_10_10_v1"
+tokenizer_id: "bpe_byte_v1_8k_legislativo_atual"
+token_dataset_id: "tokens_legislativo_atual_v1"
+sequence_policy_version: "doc_window_v1"
+
+model:
+  vocab_size: 8192
+  context_length: 512
+  d_model: 384
+  n_layers: 6
+  n_heads: 6
+  dropout: 0.1
+  tie_embeddings: true
+  layer_norm_eps: 0.00001
+
+training:
+  seed: 42
+  precision: "fp16"
+  micro_batch_size: 1
+  grad_accum_steps: 16
+  max_steps: 1000000
+  max_tokens: null
+  max_seconds: null
+  budget_counter: "successful_update_tokens"
+  learning_rate: 0.0003
+  min_learning_rate: 0.00003
+  warmup_steps: 1000
+  weight_decay: 0.01
+  grad_clip_norm: 1.0
+  evaluation_interval: 500
+  checkpoint_interval_steps: 500
+  checkpoint_interval_seconds: 300
+
+persistence:
+  backend: "drive"
+  runs_dir: "/content/drive/MyDrive/llm_legislativo/runs"
+  checkpoints_to_keep: 2
+  drive_root: "/content/drive/MyDrive/llm_legislativo"

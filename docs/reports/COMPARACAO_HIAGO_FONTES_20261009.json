@@ -1,0 +1,428 @@
+{
+  "counts": {
+    "rows": 988649,
+    "with_url": 891208,
+    "without_url": 97441
+  },
+  "unique_source_urls": 856895,
+  "source_urls_missing_manifest": 0,
+  "manifest_urls_absent_source": 0,
+  "by_file": {
+    "proposicoes-2026.csv": {
+      "rows": 45363,
+      "with_url": 45341,
+      "without_url": 22
+    },
+    "proposicoes-1934.csv": {
+      "rows": 1,
+      "with_url": 1
+    },
+    "proposicoes-1935.csv": {
+      "rows": 1,
+      "with_url": 1
+    },
+    "proposicoes-1945.csv": {
+      "rows": 1,
+      "without_url": 1
+    },
+    "proposicoes-1946.csv": {
+      "rows": 317,
+      "without_url": 275,
+      "with_url": 42
+    },
+    "proposicoes-1947.csv": {
+      "rows": 1906,
+      "without_url": 1902,
+      "with_url": 4
+    },
+    "proposicoes-1948.csv": {
+      "rows": 1758,
+      "without_url": 1754,
+      "with_url": 4
+    },
+    "proposicoes-1949.csv": {
+      "rows": 1624,
+      "without_url": 1621,
+      "with_url": 3
+    },
+    "proposicoes-1950.csv": {
+      "rows": 1323,
+      "without_url": 1321,
+      "with_url": 2
+    },
+    "proposicoes-1951.csv": {
+      "rows": 1752,
+      "without_url": 1749,
+      "with_url": 3
+    },
+    "proposicoes-1952.csv": {
+      "rows": 1470,
+      "without_url": 1469,
+      "with_url": 1
+    },
+    "proposicoes-1953.csv": {
+      "rows": 1461,
+      "without_url": 1460,
+      "with_url": 1
+    },
+    "proposicoes-1954.csv": {
+      "rows": 1241,
+      "without_url": 1240,
+      "with_url": 1
+    },
+    "proposicoes-1955.csv": {
+      "rows": 1107,
+      "without_url": 1106,
+      "with_url": 1
+    },
+    "proposicoes-1956.csv": {
+      "rows": 1513,
+      "without_url": 1512,
+      "with_url": 1
+    },
+    "proposicoes-1957.csv": {
+      "rows": 1559,
+      "without_url": 1557,
+      "with_url": 2
+    },
+    "proposicoes-1958.csv": {
+      "rows": 1237,
+      "without_url": 1235,
+      "with_url": 2
+    },
+    "proposicoes-1959.csv": {
+      "rows": 1618,
+      "without_url": 1616,
+      "with_url": 2
+    },
+    "proposicoes-1960.csv": {
+      "rows": 1240,
+      "without_url": 1239,
+      "with_url": 1
+    },
+    "proposicoes-1961.csv": {
+      "rows": 1398,
+      "without_url": 1397,
+      "with_url": 1
+    },
+    "proposicoes-1962.csv": {
+      "rows": 1242,
+      "without_url": 1241,
+      "with_url": 1
+    },
+    "proposicoes-1963.csv": {
+      "rows": 1898,
+      "without_url": 1895,
+      "with_url": 3
+    },
+    "proposicoes-1964.csv": {
+      "rows": 1105,
+      "without_url": 1104,
+      "with_url": 1
+    },
+    "proposicoes-1965.csv": {
+      "rows": 1117,
+      "without_url": 1116,
+      "with_url": 1
+    },
+    "proposicoes-1966.csv": {
+      "rows": 882,
+      "without_url": 874,
+      "with_url": 8
+    },
+    "proposicoes-1967.csv": {
+      "rows": 1117,
+      "without_url": 1102,
+      "with_url": 15
+    },
+    "proposicoes-1968.csv": {
+      "rows": 1338,
+      "with_url": 11,
+      "without_url": 1327
+    },
+    "proposicoes-1969.csv": {
+      "rows": 54,
+      "without_url": 54
+    },
+    "proposicoes-1970.csv": {
+      "rows": 472,
+      "without_url": 469,
+      "with_url": 3
+    },
+    "proposicoes-1971.csv": {
+      "rows": 766,
+      "without_url": 761,
+      "with_url": 5
+    },
+    "proposicoes-1972.csv": {
+      "rows": 704,
+      "without_url": 695,
+      "with_url": 9
+    },
+    "proposicoes-1973.csv": {
+      "rows": 856,
+      "without_url": 850,
+      "with_url": 6
+    },
+    "proposicoes-1974.csv": {
+      "rows": 851,
+      "with_url": 1,
+      "without_url": 850
+    },
+    "proposicoes-1975.csv": {
+      "rows": 1943,
+      "with_url": 31,
+      "without_url": 1912
+    },
+    "proposicoes-1976.csv": {
+      "rows": 1856,
+      "without_url": 1834,
+      "with_url": 22
+    },
+    "proposicoes-1977.csv": {
+      "rows": 1591,
+      "without_url": 1591
+    },
+    "proposicoes-1978.csv": {
+      "rows": 1338,
+      "with_url": 7,
+      "without_url": 1331
+    },
+    "proposicoes-1979.csv": {
+      "rows": 2886,
+      "with_url": 11,
+      "without_url": 2875
+    },
+    "proposicoes-1980.csv": {
+      "rows": 2035,
+      "without_url": 2033,
+      "with_url": 2
+    },
+    "proposicoes-1981.csv": {
+      "rows": 1910,
+      "without_url": 1908,
+      "with_url": 2
+    },
+    "proposicoes-1982.csv": {
+      "rows": 1164,
+      "without_url": 1163,
+      "with_url": 1
+    },
+    "proposicoes-1983.csv": {
+      "rows": 3513,
+      "with_url": 12,
+      "without_url": 3501
+    },
+    "proposicoes-1984.csv": {
+      "rows": 2447,
+      "with_url": 18,
+      "without_url": 2429
+    },
+    "proposicoes-1985.csv": {
+      "rows": 2616,
+      "with_url": 11,
+      "without_url": 2605
+    },
+    "proposicoes-1986.csv": {
+      "rows": 2075,
+      "with_url": 21,
+      "without_url": 2054
+    },
+    "proposicoes-1987.csv": {
+      "rows": 683,
+      "with_url": 5,
+      "without_url": 678
+    },
+    "proposicoes-1988.csv": {
+      "rows": 1471,
+      "with_url": 60,
+      "without_url": 1411
+    },
+    "proposicoes-1989.csv": {
+      "rows": 4287,
+      "with_url": 443,
+      "without_url": 3844
+    },
+    "proposicoes-1990.csv": {
+      "rows": 2587,
+      "with_url": 306,
+      "without_url": 2281
+    },
+    "proposicoes-1991.csv": {
+      "rows": 4436,
+      "with_url": 699,
+      "without_url": 3737
+    },
+    "proposicoes-1992.csv": {
+      "rows": 2915,
+      "without_url": 2445,
+      "with_url": 470
+    },
+    "proposicoes-1993.csv": {
+      "rows": 2715,
+      "with_url": 461,
+      "without_url": 2254
+    },
+    "proposicoes-1994.csv": {
+      "rows": 1988,
+      "with_url": 526,
+      "without_url": 1462
+    },
+    "proposicoes-1995.csv": {
+      "rows": 4780,
+      "with_url": 1421,
+      "without_url": 3359
+    },
+    "proposicoes-1996.csv": {
+      "rows": 3420,
+      "with_url": 1169,
+      "without_url": 2251
+    },
+    "proposicoes-1997.csv": {
+      "rows": 4122,
+      "with_url": 1669,
+      "without_url": 2453
+    },
+    "proposicoes-1998.csv": {
+      "rows": 2981,
+      "with_url": 1320,
+      "without_url": 1661
+    },
+    "proposicoes-1999.csv": {
+      "rows": 7277,
+      "with_url": 6423,
+      "without_url": 854
+    },
+    "proposicoes-2000.csv": {
+      "rows": 7476,
+      "with_url": 7311,
+      "without_url": 165
+    },
+    "proposicoes-2001.csv": {
+      "rows": 13101,
+      "with_url": 12682,
+      "without_url": 419
+    },
+    "proposicoes-2002.csv": {
+      "rows": 16247,
+      "with_url": 16095,
+      "without_url": 152
+    },
+    "proposicoes-2003.csv": {
+      "rows": 31994,
+      "with_url": 31346,
+      "without_url": 648
+    },
+    "proposicoes-2004.csv": {
+      "rows": 23739,
+      "with_url": 23422,
+      "without_url": 317
+    },
+    "proposicoes-2005.csv": {
+      "rows": 26150,
+      "with_url": 25896,
+      "without_url": 254
+    },
+    "proposicoes-2006.csv": {
+      "rows": 21066,
+      "with_url": 20806,
+      "without_url": 260
+    },
+    "proposicoes-2007.csv": {
+      "rows": 32520,
+      "with_url": 31791,
+      "without_url": 729
+    },
+    "proposicoes-2008.csv": {
+      "rows": 30315,
+      "with_url": 29827,
+      "without_url": 488
+    },
+    "proposicoes-2009.csv": {
+      "rows": 31688,
+      "with_url": 30980,
+      "without_url": 708
+    },
+    "proposicoes-2010.csv": {
+      "rows": 18854,
+      "with_url": 18105,
+      "without_url": 749
+    },
+    "proposicoes-2011.csv": {
+      "rows": 33580,
+      "with_url": 33236,
+      "without_url": 344
+    },
+    "proposicoes-2012.csv": {
+      "rows": 23510,
+      "with_url": 23321,
+      "without_url": 189
+    },
+    "proposicoes-2013.csv": {
+      "rows": 29153,
+      "with_url": 28948,
+      "without_url": 205
+    },
+    "proposicoes-2014.csv": {
+      "rows": 17401,
+      "with_url": 17311,
+      "without_url": 90
+    },
+    "proposicoes-2015.csv": {
+      "rows": 39647,
+      "with_url": 39472,
+      "without_url": 175
+    },
+    "proposicoes-2016.csv": {
+      "rows": 24996,
+      "with_url": 24570,
+      "without_url": 426
+    },
+    "proposicoes-2017.csv": {
+      "rows": 32565,
+      "with_url": 32151,
+      "without_url": 414
+    },
+    "proposicoes-2018.csv": {
+      "rows": 18709,
+      "with_url": 18573,
+      "without_url": 136
+    },
+    "proposicoes-2019.csv": {
+      "rows": 38494,
+      "with_url": 38269,
+      "without_url": 225
+    },
+    "proposicoes-2020.csv": {
+      "rows": 29766,
+      "with_url": 29758,
+      "without_url": 8
+    },
+    "proposicoes-2021.csv": {
+      "rows": 39872,
+      "with_url": 39610,
+      "without_url": 262
+    },
+    "proposicoes-2022.csv": {
+      "rows": 26918,
+      "with_url": 26617,
+      "without_url": 301
+    },
+    "proposicoes-2023.csv": {
+      "rows": 62437,
+      "with_url": 61920,
+      "without_url": 517
+    },
+    "proposicoes-2024.csv": {
+      "rows": 61536,
+      "with_url": 61302,
+      "without_url": 234
+    },
+    "proposicoes-2025.csv": {
+      "rows": 107587,
+      "with_url": 107301,
+      "without_url": 286
+    }
+  },
+  "missing_examples": []
+}

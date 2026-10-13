@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TokenizerManifest",
+  "type": "object",
+  "required": [
+    "tokenizer_id",
+    "corpus_version",
+    "split_version",
+    "training_item_ids_hash",
+    "training_text_hashes_hash",
+    "config_hash",
+    "library",
+    "library_version",
+    "vocab_size",
+    "special_tokens",
+    "alphabet_policy",
+    "normalization_policy",
+    "tokenizer_file_sha256",
+    "seed",
+    "training_bytes"
+  ],
+  "properties": {
+    "tokenizer_id": {"type": "string"},
+    "corpus_version": {"type": "string"},
+    "split_version": {"type": "string"},
+    "training_item_ids_hash": {"type": "string"},
+    "training_text_hashes_hash": {"type": "string"},
+    "config_hash": {"type": "string"},
+    "library": {"type": "string"},
+    "library_version": {"type": "string"},
+    "vocab_size": {"type": "integer"},
+    "special_tokens": {
+      "type": "object",
+      "required": ["PAD", "BOS", "EOS"],
+      "properties": {
+        "PAD": {"type": "integer", "enum": [0]},
+        "BOS": {"type": "integer", "enum": [1]},
+        "EOS": {"type": "integer", "enum": [2]}
+      }
+    },
+    "alphabet_policy": {"type": "string"},
+    "normalization_policy": {"type": "string"},
+    "tokenizer_file_sha256": {"type": "string"},
+    "seed": {"type": "integer"},
+    "training_bytes": {"type": "integer"}
+  }
+}

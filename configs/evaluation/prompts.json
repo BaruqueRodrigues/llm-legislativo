@@ -1,0 +1,22 @@
+[
+  {
+    "id": "prompt_pl_ementa",
+    "prompt": "PROJETO DE LEI Nº\n\nAltera a Lei nº",
+    "description": "Início padrão de Projeto de Lei com proposição de alteração legislativa"
+  },
+  {
+    "id": "prompt_parecer_relatorio",
+    "prompt": "COMISSÃO DE CONSTITUIÇÃO E JUSTIÇA E DE CIDADANIA\n\nI - RELATÓRIO\n",
+    "description": "Abertura de relatório de comissão temático-normativa"
+  },
+  {
+    "id": "prompt_emenda_modificativa",
+    "prompt": "EMENDA MODIFICATIVA Nº\n\nDê-se ao art. 1º a seguinte redação:\n",
+    "description": "Texto típico de emenda parlamentar modificativa"
+  },
+  {
+    "id": "prompt_justificativa",
+    "prompt": "JUSTIFICAÇÃO\n\nA presente proposição tem por objetivo precípuo",
+    "description": "Abertura de justificativa legislativa formal"
+  }
+]

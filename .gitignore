@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and builds
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# R environment and history
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# External Data Root and large datasets
+DATA_ROOT/
+data/
+runs/
+staging/
+extracted/
+curated/
+tokenizers/
+tokens/
+processo_hiago/
+scratch/
+
+# Swift native extraction build artifacts
+.cache/
+R/extraction/native/macos/.cache/
+R/extraction/native/macos/bin/
+tests/extraction/fixtures/generate_test_pdfs
+*.pcm
+
+# Binaries, models and checkpoints
+*.bin
+*.pdf
+*.pt
+*.pth
+*.npy
+*.arrow
+*.part
+
+# Parquet files (ignore massive data, allow small test fixtures)
+*.parquet
+!tests/fixtures/**/*.parquet
+
+# Operating System and IDEs
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.vscode/
+.idea/
+*.swp
+*~

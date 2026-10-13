@@ -1,0 +1,38 @@
+# configs/training/pilot.yaml
+# Configuração de treinamento educacional (Transformer Decoder PyTorch do zero)
+
+run_id: "pilot_cpu_smoke"
+corpus_version: "corpus_v1"
+split_version: "split_v1"
+tokenizer_id: "bpe_byte_v1_8k"
+token_dataset_id: "tok_dataset_v1"
+sequence_policy_version: "doc_window_v1"
+
+model:
+  vocab_size: 8192
+  context_length: 512
+  d_model: 384
+  n_layers: 6
+  n_heads: 6
+  dropout: 0.1
+  tie_embeddings: true
+
+training:
+  seed: 42
+  precision: "fp32"
+  micro_batch_size: 2
+  grad_accum_steps: 4
+  max_steps: 200
+  budget_counter: "successful_update_tokens"
+  learning_rate: 0.0005
+  min_learning_rate: 0.00005
+  warmup_steps: 20
+  weight_decay: 0.01
+  grad_clip_norm: 1.0
+  evaluation_interval: 25
+  checkpoint_interval_steps: 50
+  checkpoint_interval_seconds: 300
+
+persistence:
+  backend: "local"
+  runs_dir: "runs"

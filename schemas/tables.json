@@ -1,0 +1,493 @@
+{
+  "source_snapshots": {
+    "pk": ["snapshot_id"],
+    "columns": {
+      "snapshot_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "source_kind": {"type": "string", "nullable": false},
+      "request_url": {"type": "string", "nullable": false},
+      "query_json": {"type": "string", "nullable": false},
+      "collected_at": {"type": "timestamp_us_utc", "nullable": false},
+      "http_status": {"type": "int32", "nullable": true},
+      "payload_sha256": {"type": "string", "nullable": true},
+      "raw_path": {"type": "string", "nullable": true},
+      "pagination_complete": {"type": "boolean", "nullable": false},
+      "source_schema_version": {"type": "string", "nullable": true},
+      "license_evidence_id": {"type": "string", "nullable": true}
+    }
+  },
+  "propositions": {
+    "pk": ["proposition_id"],
+    "columns": {
+      "proposition_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "source_id": {"type": "string", "nullable": false},
+      "type_code": {"type": "string", "nullable": true},
+      "type_source_id": {"type": "string", "nullable": true},
+      "type_label": {"type": "string", "nullable": false},
+      "legislative_type_id": {"type": "string", "nullable": true},
+      "source_namespace": {"type": "string", "nullable": false},
+      "number": {"type": "int32", "nullable": true},
+      "numbering_year": {"type": "int32", "nullable": true},
+      "number_raw": {"type": "string", "nullable": true},
+      "identifier_label": {"type": "string", "nullable": true},
+      "presentation_date": {"type": "date32", "nullable": true},
+      "presentation_raw": {"type": "string", "nullable": true},
+      "origin_house": {"type": "string", "nullable": true},
+      "legislative_body": {"type": "string", "nullable": true},
+      "title": {"type": "string", "nullable": true},
+      "summary": {"type": "string", "nullable": true},
+      "source_uri": {"type": "string", "nullable": false},
+      "whole_text_url": {"type": "string", "nullable": true},
+      "snapshot_id": {"type": "string", "nullable": false},
+      "cohort_status": {"type": "string", "nullable": false},
+      "cohort_reason": {"type": "string", "nullable": false}
+    }
+  },
+  "authors": {
+    "pk": ["author_id"],
+    "columns": {
+      "author_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "source_id": {"type": "string", "nullable": true},
+      "name": {"type": "string", "nullable": false},
+      "author_type": {"type": "string", "nullable": false},
+      "source_uri": {"type": "string", "nullable": true},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "proposition_authors": {
+    "pk": ["proposition_id", "author_id", "role"],
+    "columns": {
+      "proposition_id": {"type": "string", "nullable": false},
+      "author_id": {"type": "string", "nullable": false},
+      "role": {"type": "string", "nullable": false},
+      "is_proponent": {"type": "boolean", "nullable": true},
+      "signature_order": {"type": "int32", "nullable": true},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "document_authors": {
+    "pk": ["document_id", "author_id", "role"],
+    "columns": {
+      "document_id": {"type": "string", "nullable": false},
+      "author_id": {"type": "string", "nullable": false},
+      "role": {"type": "string", "nullable": false},
+      "signature_order": {"type": "int32", "nullable": true},
+      "source_uri": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "themes": {
+    "pk": ["theme_id"],
+    "columns": {
+      "theme_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "source_id": {"type": "string", "nullable": false},
+      "name": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "proposition_themes": {
+    "pk": ["proposition_id", "theme_id"],
+    "columns": {
+      "proposition_id": {"type": "string", "nullable": false},
+      "theme_id": {"type": "string", "nullable": false},
+      "relevance": {"type": "string", "nullable": true},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "metadata_checks": {
+    "pk": ["entity_kind", "entity_id", "endpoint_kind"],
+    "columns": {
+      "entity_kind": {"type": "string", "nullable": false},
+      "entity_id": {"type": "string", "nullable": false},
+      "endpoint_kind": {"type": "string", "nullable": false},
+      "status": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": true},
+      "last_checked_at": {"type": "timestamp_us_utc", "nullable": true},
+      "reason": {"type": "string", "nullable": true}
+    }
+  },
+  "relations": {
+    "pk": ["relation_id"],
+    "columns": {
+      "relation_id": {"type": "string", "nullable": false},
+      "source_proposition_id": {"type": "string", "nullable": false},
+      "target_proposition_id": {"type": "string", "nullable": false},
+      "relation_type": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false},
+      "source_uri": {"type": "string", "nullable": false},
+      "grouping_policy": {"type": "string", "nullable": false}
+    }
+  },
+  "process_phases": {
+    "pk": ["phase_id"],
+    "columns": {
+      "phase_id": {"type": "string", "nullable": false},
+      "process_proposition_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "source_namespace": {"type": "string", "nullable": false},
+      "source_phase_id": {"type": "string", "nullable": true},
+      "phase_kind": {"type": "string", "nullable": false},
+      "legislative_body": {"type": "string", "nullable": true},
+      "committee_source_id": {"type": "string", "nullable": true},
+      "number_raw": {"type": "string", "nullable": true},
+      "type_code": {"type": "string", "nullable": true},
+      "numbering_year": {"type": "int32", "nullable": true},
+      "date_start": {"type": "date32", "nullable": true},
+      "date_end": {"type": "date32", "nullable": true},
+      "source_uri": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "document_phases": {
+    "pk": ["document_id", "phase_id"],
+    "columns": {
+      "document_id": {"type": "string", "nullable": false},
+      "phase_id": {"type": "string", "nullable": false},
+      "role": {"type": "string", "nullable": false},
+      "evidence": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "documents": {
+    "pk": ["document_id"],
+    "columns": {
+      "document_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "source_document_id": {"type": "string", "nullable": true},
+      "source_namespace": {"type": "string", "nullable": false},
+      "identity_url": {"type": "string", "nullable": false},
+      "document_type": {"type": "string", "nullable": false},
+      "document_type_source_id": {"type": "string", "nullable": true},
+      "legislative_type_id": {"type": "string", "nullable": true},
+      "legislative_body": {"type": "string", "nullable": true},
+      "normalized_kind": {"type": "string", "nullable": false},
+      "publication_date": {"type": "date32", "nullable": true},
+      "date_range_start": {"type": "date32", "nullable": true},
+      "date_range_end": {"type": "date32", "nullable": true},
+      "date_status": {"type": "string", "nullable": false},
+      "source_uri": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "proposition_documents": {
+    "pk": ["proposition_id", "document_id"],
+    "columns": {
+      "proposition_id": {"type": "string", "nullable": false},
+      "document_id": {"type": "string", "nullable": false},
+      "document_role": {"type": "string", "nullable": false},
+      "role_status": {"type": "string", "nullable": false},
+      "role_evidence": {"type": "string", "nullable": true},
+      "document_date": {"type": "date32", "nullable": true},
+      "source_order": {"type": "int32", "nullable": true},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "document_versions": {
+    "pk": ["version_id"],
+    "columns": {
+      "version_id": {"type": "string", "nullable": false},
+      "document_id": {"type": "string", "nullable": false},
+      "file_sha256": {"type": "string", "nullable": false},
+      "raw_path": {"type": "string", "nullable": false},
+      "file_size_bytes": {"type": "int64", "nullable": false},
+      "detected_media_type": {"type": "string", "nullable": false},
+      "page_count": {"type": "int32", "nullable": true},
+      "version_kind": {"type": "string", "nullable": false},
+      "source_version_label": {"type": "string", "nullable": true},
+      "source_content_date": {"type": "date32", "nullable": true},
+      "availability_date": {"type": "date32", "nullable": true},
+      "version_date_status": {"type": "string", "nullable": false},
+      "predecessor_version_id": {"type": "string", "nullable": true},
+      "first_capture_id": {"type": "string", "nullable": false},
+      "integrity_status": {"type": "string", "nullable": false}
+    }
+  },
+  "fetch_attempts": {
+    "pk": ["capture_id"],
+    "columns": {
+      "capture_id": {"type": "string", "nullable": false},
+      "document_id": {"type": "string", "nullable": false},
+      "requested_url": {"type": "string", "nullable": false},
+      "final_url": {"type": "string", "nullable": true},
+      "started_at": {"type": "timestamp_us_utc", "nullable": false},
+      "finished_at": {"type": "timestamp_us_utc", "nullable": true},
+      "attempt_no": {"type": "int32", "nullable": false},
+      "http_status": {"type": "int32", "nullable": true},
+      "declared_media_type": {"type": "string", "nullable": true},
+      "declared_size_bytes": {"type": "int64", "nullable": true},
+      "received_size_bytes": {"type": "int64", "nullable": true},
+      "file_sha256": {"type": "string", "nullable": true},
+      "version_id": {"type": "string", "nullable": true},
+      "status": {"type": "string", "nullable": false},
+      "error_code": {"type": "string", "nullable": true},
+      "error_message": {"type": "string", "nullable": true},
+      "next_retry_at": {"type": "timestamp_us_utc", "nullable": true}
+    }
+  },
+  "use_evidence": {
+    "pk": ["evidence_id"],
+    "columns": {
+      "evidence_id": {"type": "string", "nullable": false},
+      "source_uri": {"type": "string", "nullable": false},
+      "accessed_at": {"type": "timestamp_us_utc", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": true},
+      "applies_to": {"type": "string", "nullable": false},
+      "permission_status": {"type": "string", "nullable": false},
+      "attribution_rule": {"type": "string", "nullable": true},
+      "redistribution_rule": {"type": "string", "nullable": true},
+      "review_note": {"type": "string", "nullable": false}
+    }
+  },
+  "source_collections": {
+    "pk": ["collection_id"],
+    "columns": {
+      "collection_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "source_namespace": {"type": "string", "nullable": false},
+      "name": {"type": "string", "nullable": false},
+      "collection_kind": {"type": "string", "nullable": false},
+      "catalog_uri": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false},
+      "inventory_unit": {"type": "string", "nullable": false},
+      "digital_availability_note": {"type": "string", "nullable": false}
+    }
+  },
+  "legislative_types": {
+    "pk": ["legislative_type_id"],
+    "columns": {
+      "legislative_type_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "source_namespace": {"type": "string", "nullable": false},
+      "type_source_id": {"type": "string", "nullable": true},
+      "type_code": {"type": "string", "nullable": true},
+      "type_label": {"type": "string", "nullable": false},
+      "entity_kind": {"type": "string", "nullable": false},
+      "normalized_family": {"type": "string", "nullable": false},
+      "mapping_status": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "coverage_segments": {
+    "pk": ["segment_id"],
+    "columns": {
+      "segment_id": {"type": "string", "nullable": false},
+      "collection_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "legislative_type_id": {"type": "string", "nullable": true},
+      "year": {"type": "int32", "nullable": true},
+      "period_start": {"type": "date32", "nullable": true},
+      "period_end": {"type": "date32", "nullable": true},
+      "date_axis": {"type": "string", "nullable": false},
+      "snapshot_cutoff_utc": {"type": "timestamp_us_utc", "nullable": false},
+      "query_json": {"type": "string", "nullable": false},
+      "inventory_status": {"type": "string", "nullable": false},
+      "coverage_status": {"type": "string", "nullable": false},
+      "expected_count": {"type": "int64", "nullable": true},
+      "discovered_count": {"type": "int64", "nullable": false},
+      "retrieved_count": {"type": "int64", "nullable": false},
+      "accepted_count": {"type": "int64", "nullable": false},
+      "count_unit": {"type": "string", "nullable": false},
+      "exhaustion_evidence": {"type": "string", "nullable": true},
+      "gap_reason": {"type": "string", "nullable": true},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "collection_documents": {
+    "pk": ["collection_id", "document_id"],
+    "columns": {
+      "collection_id": {"type": "string", "nullable": false},
+      "document_id": {"type": "string", "nullable": false},
+      "source_catalog_id": {"type": "string", "nullable": true},
+      "reference_code": {"type": "string", "nullable": true},
+      "volume_label": {"type": "string", "nullable": true},
+      "issue_label": {"type": "string", "nullable": true},
+      "source_order": {"type": "int32", "nullable": true},
+      "snapshot_id": {"type": "string", "nullable": false}
+    }
+  },
+  "entity_aliases": {
+    "pk": ["alias_id"],
+    "columns": {
+      "alias_id": {"type": "string", "nullable": false},
+      "entity_kind": {"type": "string", "nullable": false},
+      "alias_namespace": {"type": "string", "nullable": false},
+      "alias_source_id": {"type": "string", "nullable": false},
+      "canonical_entity_id": {"type": "string", "nullable": false},
+      "evidence_uri": {"type": "string", "nullable": false},
+      "snapshot_id": {"type": "string", "nullable": false},
+      "status": {"type": "string", "nullable": false}
+    }
+  },
+  "extraction_runs": {
+    "pk": ["extraction_id"],
+    "columns": {
+      "extraction_id": {"type": "string", "nullable": false},
+      "version_id": {"type": "string", "nullable": false},
+      "extraction_config_hash": {"type": "string", "nullable": false},
+      "tool_versions_json": {"type": "string", "nullable": false},
+      "host_os_build": {"type": "string", "nullable": false},
+      "helper_source_sha256": {"type": "string", "nullable": false},
+      "started_at": {"type": "timestamp_us_utc", "nullable": false},
+      "status": {"type": "string", "nullable": false},
+      "error_code": {"type": "string", "nullable": true}
+    }
+  },
+  "pages": {
+    "pk": ["extraction_id", "page_index"],
+    "columns": {
+      "extraction_id": {"type": "string", "nullable": false},
+      "page_index": {"type": "int32", "nullable": false},
+      "method": {"type": "string", "nullable": false},
+      "engine": {"type": "string", "nullable": false},
+      "engine_revision": {"type": "string", "nullable": true},
+      "recognition_level": {"type": "string", "nullable": true},
+      "recognition_languages_json": {"type": "string", "nullable": true},
+      "uses_language_correction": {"type": "boolean", "nullable": true},
+      "render_width": {"type": "int32", "nullable": true},
+      "render_height": {"type": "int32", "nullable": true},
+      "elapsed_ms": {"type": "float64", "nullable": true},
+      "raw_text": {"type": "string", "nullable": true},
+      "raw_text_sha256": {"type": "string", "nullable": true},
+      "character_count": {"type": "int64", "nullable": false},
+      "replacement_char_ratio": {"type": "float64", "nullable": true},
+      "printable_ratio": {"type": "float64", "nullable": true},
+      "image_area_ratio": {"type": "float64", "nullable": true},
+      "ocr_confidence": {"type": "float64", "nullable": true},
+      "layout_path": {"type": "string", "nullable": true},
+      "layout_sha256": {"type": "string", "nullable": true},
+      "quality_status": {"type": "string", "nullable": false},
+      "quality_reasons_json": {"type": "string", "nullable": false}
+    }
+  },
+  "sections": {
+    "pk": ["section_id"],
+    "columns": {
+      "section_id": {"type": "string", "nullable": false},
+      "extraction_id": {"type": "string", "nullable": false},
+      "ordinal": {"type": "int32", "nullable": false},
+      "section_type": {"type": "string", "nullable": false},
+      "page_start": {"type": "int32", "nullable": false},
+      "page_end": {"type": "int32", "nullable": false},
+      "start_char": {"type": "int64", "nullable": true},
+      "end_char": {"type": "int64", "nullable": true},
+      "detection_method": {"type": "string", "nullable": false},
+      "confidence": {"type": "float64", "nullable": true},
+      "review_status": {"type": "string", "nullable": false},
+      "text": {"type": "string", "nullable": false}
+    }
+  },
+  "curated_documents": {
+    "pk": ["corpus_item_id"],
+    "columns": {
+      "corpus_item_id": {"type": "string", "nullable": false},
+      "primary_proposition_id": {"type": "string", "nullable": true},
+      "document_id": {"type": "string", "nullable": false},
+      "house": {"type": "string", "nullable": false},
+      "normalized_kind": {"type": "string", "nullable": false},
+      "content_date": {"type": "date32", "nullable": true},
+      "content_date_start": {"type": "date32", "nullable": true},
+      "content_date_end": {"type": "date32", "nullable": true},
+      "temporal_date_evidence": {"type": "string", "nullable": true},
+      "temporal_date_status": {"type": "string", "nullable": false},
+      "version_id": {"type": "string", "nullable": false},
+      "extraction_id": {"type": "string", "nullable": false},
+      "composition_id": {"type": "string", "nullable": false},
+      "logical_unit_id": {"type": "string", "nullable": false},
+      "source_span_start": {"type": "int64", "nullable": true},
+      "source_span_end": {"type": "int64", "nullable": true},
+      "text": {"type": "string", "nullable": false},
+      "text_sha256": {"type": "string", "nullable": false},
+      "comparison_sha256": {"type": "string", "nullable": false},
+      "utf8_bytes": {"type": "int64", "nullable": false},
+      "character_count": {"type": "int64", "nullable": false},
+      "cleaning_version": {"type": "string", "nullable": false},
+      "presentation_date": {"type": "date32", "nullable": true},
+      "quality_status": {"type": "string", "nullable": false},
+      "eligibility_reason": {"type": "string", "nullable": false},
+      "exact_cluster_id": {"type": "string", "nullable": false},
+      "family_id": {"type": "string", "nullable": false},
+      "near_cluster_id": {"type": "string", "nullable": true},
+      "representative_item_id": {"type": "string", "nullable": false},
+      "include_in_dataset": {"type": "boolean", "nullable": false},
+      "permission_status": {"type": "string", "nullable": false}
+    }
+  },
+  "corpus_item_propositions": {
+    "pk": ["corpus_item_id", "proposition_id"],
+    "columns": {
+      "corpus_item_id": {"type": "string", "nullable": false},
+      "proposition_id": {"type": "string", "nullable": false},
+      "link_type": {"type": "string", "nullable": false},
+      "grouping_policy": {"type": "string", "nullable": false},
+      "evidence": {"type": "string", "nullable": false}
+    }
+  },
+  "curated_document_sections": {
+    "pk": ["corpus_item_id", "section_id"],
+    "columns": {
+      "corpus_item_id": {"type": "string", "nullable": false},
+      "section_id": {"type": "string", "nullable": false},
+      "output_order": {"type": "int32", "nullable": false},
+      "included": {"type": "boolean", "nullable": false},
+      "reason": {"type": "string", "nullable": false}
+    }
+  },
+  "dedup_pairs": {
+    "pk": ["left_item_id", "right_item_id"],
+    "columns": {
+      "left_item_id": {"type": "string", "nullable": false},
+      "right_item_id": {"type": "string", "nullable": false},
+      "method": {"type": "string", "nullable": false},
+      "similarity": {"type": "float64", "nullable": true},
+      "decision": {"type": "string", "nullable": false},
+      "evidence": {"type": "string", "nullable": false},
+      "policy_version": {"type": "string", "nullable": false}
+    }
+  },
+  "cleaning_events": {
+    "pk": ["event_id"],
+    "columns": {
+      "event_id": {"type": "string", "nullable": false},
+      "corpus_item_id": {"type": "string", "nullable": false},
+      "rule_id": {"type": "string", "nullable": false},
+      "before_sha256": {"type": "string", "nullable": false},
+      "after_sha256": {"type": "string", "nullable": false},
+      "affected_spans_json": {"type": "string", "nullable": false},
+      "reason": {"type": "string", "nullable": false}
+    }
+  },
+  "quality_reviews": {
+    "pk": ["review_id"],
+    "columns": {
+      "review_id": {"type": "string", "nullable": false},
+      "extraction_id": {"type": "string", "nullable": false},
+      "corpus_item_id": {"type": "string", "nullable": true},
+      "page_index": {"type": "int32", "nullable": true},
+      "reviewer": {"type": "string", "nullable": false},
+      "sample_seed": {"type": "int64", "nullable": false},
+      "stratum": {"type": "string", "nullable": false},
+      "result": {"type": "string", "nullable": false},
+      "cer": {"type": "float64", "nullable": true},
+      "wer": {"type": "float64", "nullable": true},
+      "reviewed_at": {"type": "timestamp_us_utc", "nullable": false},
+      "notes": {"type": "string", "nullable": false}
+    }
+  },
+  "split_assignments": {
+    "pk": ["split_version", "corpus_item_id"],
+    "columns": {
+      "split_version": {"type": "string", "nullable": false},
+      "corpus_item_id": {"type": "string", "nullable": false},
+      "family_id": {"type": "string", "nullable": false},
+      "split": {"type": "string", "nullable": false},
+      "policy": {"type": "string", "nullable": false},
+      "assignment_reason": {"type": "string", "nullable": false},
+      "seed": {"type": "int64", "nullable": false},
+      "temporal_cut_train": {"type": "date32", "nullable": true},
+      "temporal_cut_validation": {"type": "date32", "nullable": true}
+    }
+  }
+}

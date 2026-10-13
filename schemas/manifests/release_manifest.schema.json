@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ReleaseManifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "corpus_version",
+    "created_at_utc",
+    "cohort_definition",
+    "source_snapshot_ids",
+    "snapshot_cutoff_utc",
+    "history_scope",
+    "houses",
+    "source_collection_ids",
+    "coverage_segment_ids",
+    "coverage_status",
+    "document_type_mapping_version",
+    "selection_policy",
+    "extraction_config_hash",
+    "cleaning_version",
+    "dedup_policy_version",
+    "split_version",
+    "seed",
+    "code_revision",
+    "permission_summary",
+    "counts",
+    "utf8_bytes",
+    "files"
+  ],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "corpus_version": {"type": "string"},
+    "created_at_utc": {"type": "string", "format": "date-time"},
+    "cohort_definition": {"type": "string"},
+    "source_snapshot_ids": {"type": "array", "items": {"type": "string"}},
+    "snapshot_cutoff_utc": {"type": "string", "format": "date-time"},
+    "history_scope": {"type": "string", "enum": ["all_available", "homologation_sample"]},
+    "houses": {"type": "array", "items": {"type": "string", "enum": ["camara", "senado"]}},
+    "source_collection_ids": {"type": "array", "items": {"type": "string"}},
+    "coverage_segment_ids": {"type": "array", "items": {"type": "string"}},
+    "coverage_status": {"type": "string", "enum": ["partial", "closed_with_gaps", "complete_discovered"]},
+    "document_type_mapping_version": {"type": "string"},
+    "selection_policy": {"type": "string"},
+    "extraction_config_hash": {"type": "string"},
+    "cleaning_version": {"type": "string"},
+    "dedup_policy_version": {"type": "string"},
+    "split_version": {"type": "string"},
+    "seed": {"type": "integer"},
+    "code_revision": {"type": "string"},
+    "permission_summary": {"type": "object"},
+    "counts": {"type": "object"},
+    "utf8_bytes": {"type": "object"},
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "table_name", "row_count", "size_bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string"},
+          "table_name": {"type": "string"},
+          "row_count": {"type": "integer"},
+          "size_bytes": {"type": "integer"},
+          "sha256": {"type": "string"}
+        }
+      }
+    }
+  }
+}

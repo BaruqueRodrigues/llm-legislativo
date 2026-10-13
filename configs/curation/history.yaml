@@ -1,0 +1,43 @@
+# configs/curation/history.yaml
+# Configuração de curadoria, limpeza, deduplicação e divisão em splits
+
+curation_version: "2.0.0"
+cleaning_version: "clean_v1"
+dedup_policy_version: "dedup_v1"
+split_version: "split_v1"
+seed: 42
+
+cleaning:
+  preserve_case: true
+  preserve_accents: true
+  preserve_structure: true
+  normalize_linebreaks_crlf_to_lf: true
+  remove_digital_signatures: true
+  remove_running_headers_footers: true
+
+deduplication:
+  exact_binary_dedup: true
+  exact_text_dedup: true
+  near_dedup_shingle_words: 5
+  near_dedup_jaccard_threshold: 0.90
+  containment_detection: true
+  containment_min_passage_tokens: 30
+
+family_graph:
+  bind_related_propositions: true
+  bind_versions_and_substitutes: true
+  bind_cross_house_phases: true
+  bind_annexes_to_logical_unit: true
+  prevent_binding_on_incidental_mentions: true
+
+splits:
+  policy: "group_hash"
+  target_proportions:
+    train: 0.80
+    validation: 0.10
+    test: 0.10
+  allow_undated_in_group_hash: true
+  temporal_purged:
+    enabled: false
+    temporal_cut_train: "2022-12-31"
+    temporal_cut_validation: "2023-12-31"

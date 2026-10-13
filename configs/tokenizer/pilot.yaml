@@ -1,0 +1,29 @@
+# configs/tokenizer/pilot.yaml
+# Configuração do tokenizer BPE byte-level próprio
+
+tokenizer_id: "bpe_byte_v1_8k"
+corpus_version: "corpus_v1"
+split_version: "split_v1"
+sequence_policy_version: "doc_window_v1"
+
+model:
+  type: "BPE"
+  byte_fallback: true
+  vocab_size: 8192  # Incluindo especiais
+  min_frequency: 2
+
+special_tokens:
+  PAD: 0
+  BOS: 1
+  EOS: 2
+
+tokenization:
+  lowercase: false
+  strip_accents: false
+  add_prefix_space: false
+
+dataset:
+  context_length: 512
+  dtype: "int32"
+  endianness: "little"
+  shards_dir: "tokens"

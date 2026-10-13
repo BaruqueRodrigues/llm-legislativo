@@ -1,0 +1,21 @@
+# Ambiente para pretraining integral com dados tokenizados e checkpoints no Drive.
+session_name: "colab_integral_legislativo"
+drive_root: "/content/drive/MyDrive/llm_legislativo"
+local_scratch_root: "/content/llm_legislativo"
+
+preflight:
+  min_vram_gb: 12.0
+  min_ram_gb: 12.0
+  min_disk_free_gb: 20.0
+  check_gpu: true
+  allow_cpu_fallback: false
+
+staging:
+  sync_to_local_disk: true
+  verify_shard_hashes: true
+  cleanup_on_completion: false
+
+persistence:
+  checkpoints_to_keep: 2
+  keep_best: true
+  sync_frequency_seconds: 300

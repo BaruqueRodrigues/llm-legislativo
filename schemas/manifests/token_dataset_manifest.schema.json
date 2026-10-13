@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TokenDatasetManifest",
+  "type": "object",
+  "required": [
+    "token_dataset_id",
+    "corpus_version",
+    "split_version",
+    "tokenizer_id",
+    "tokenizer_file_sha256",
+    "sequence_policy_version",
+    "context_length",
+    "special_tokens",
+    "dtype",
+    "endianness",
+    "counts",
+    "files"
+  ],
+  "properties": {
+    "token_dataset_id": {"type": "string"},
+    "corpus_version": {"type": "string"},
+    "split_version": {"type": "string"},
+    "tokenizer_id": {"type": "string"},
+    "tokenizer_file_sha256": {"type": "string"},
+    "sequence_policy_version": {"type": "string"},
+    "context_length": {"type": "integer"},
+    "special_tokens": {"type": "object"},
+    "dtype": {"type": "string", "enum": ["int32"]},
+    "endianness": {"type": "string", "enum": ["little"]},
+    "counts": {"type": "object"},
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "split", "size_bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string"},
+          "split": {"type": "string"},
+          "size_bytes": {"type": "integer"},
+          "sha256": {"type": "string"}
+        }
+      }
+    }
+  }
+}

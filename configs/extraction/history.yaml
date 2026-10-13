@@ -1,0 +1,26 @@
+# configs/extraction/history.yaml
+# Configuração de extração nativa Mac e OCR seletivo Apple Vision
+
+profile_name: "mac_native_v1"
+extraction_version: "2.0.0"
+
+engine_policy:
+  primary: "pdfkit"
+  ocr_fallback: "apple_vision"
+
+apple_vision:
+  default_mode: "fast"
+  high_accuracy_mode: "accurate"
+  language: "pt-BR"
+  uses_language_correction: true
+  min_text_length_threshold: 50
+  max_replacement_char_ratio: 0.01
+  min_printable_ratio: 0.95
+
+timeout_per_page_seconds: 30
+max_memory_mb: 2048
+
+output:
+  extracted_dir: "extracted"
+  save_page_metrics: true
+  save_raw_blocks: false

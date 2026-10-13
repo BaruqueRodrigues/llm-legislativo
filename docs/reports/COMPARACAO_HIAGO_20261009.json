@@ -1,0 +1,1342 @@
+{
+  "friend_rows": 856904,
+  "friend_unique_keys": 856895,
+  "friend_duplicate_key_rows": 9,
+  "friend_status": {
+    "200": 856895,
+    "ChunkedEncodingError": 2,
+    "504": 6,
+    "ConnectionError": 1
+  },
+  "friend_status_type": {
+    "('200', 'outro')": 48832,
+    "('200', 'pdf')": 760753,
+    "('200', 'html')": 47310,
+    "('ChunkedEncodingError', 'erro')": 2,
+    "('504', 'outro')": 6,
+    "('ConnectionError', 'erro')": 1
+  },
+  "friend_status_extension": {
+    "('200', '.html')": 94054,
+    "('200', '.pdf')": 760766,
+    "('200', '.doc')": 2075,
+    "('ChunkedEncodingError', '')": 2,
+    "('504', '.txt')": 6,
+    "('ConnectionError', '')": 1
+  },
+  "friend_declared_pdf_bytes_unique": 332987835605,
+  "friend_by_year": {
+    "1934": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1935": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1946": {
+      "total": 42,
+      "html_file": 42
+    },
+    "1947": {
+      "total": 4,
+      "html_file": 4
+    },
+    "1948": {
+      "total": 4,
+      "html_file": 3,
+      "pdf_200": 1
+    },
+    "1949": {
+      "total": 3,
+      "html_file": 3
+    },
+    "1950": {
+      "total": 2,
+      "html_file": 2
+    },
+    "1951": {
+      "total": 3,
+      "html_file": 3
+    },
+    "1952": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1953": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1954": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1955": {
+      "total": 1,
+      "pdf_200": 1
+    },
+    "1956": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1957": {
+      "total": 2,
+      "html_file": 2
+    },
+    "1958": {
+      "total": 2,
+      "html_file": 2
+    },
+    "1959": {
+      "total": 2,
+      "html_file": 1,
+      "pdf_200": 1
+    },
+    "1960": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1961": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1962": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1963": {
+      "total": 3,
+      "html_file": 3
+    },
+    "1964": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1965": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1966": {
+      "total": 8,
+      "html_file": 8
+    },
+    "1967": {
+      "total": 15,
+      "html_file": 15
+    },
+    "1968": {
+      "total": 11,
+      "html_file": 11
+    },
+    "1970": {
+      "total": 3,
+      "html_file": 3
+    },
+    "1971": {
+      "total": 5,
+      "html_file": 5
+    },
+    "1972": {
+      "total": 9,
+      "html_file": 9
+    },
+    "1973": {
+      "total": 6,
+      "html_file": 6
+    },
+    "1974": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1975": {
+      "total": 31,
+      "html_file": 31
+    },
+    "1976": {
+      "total": 22,
+      "html_file": 22
+    },
+    "1978": {
+      "total": 7,
+      "html_file": 7
+    },
+    "1979": {
+      "total": 11,
+      "html_file": 11
+    },
+    "1980": {
+      "total": 2,
+      "html_file": 2
+    },
+    "1981": {
+      "total": 2,
+      "html_file": 2
+    },
+    "1982": {
+      "total": 1,
+      "html_file": 1
+    },
+    "1983": {
+      "total": 12,
+      "html_file": 12
+    },
+    "1984": {
+      "total": 18,
+      "html_file": 18
+    },
+    "1985": {
+      "total": 11,
+      "html_file": 11
+    },
+    "1986": {
+      "total": 21,
+      "html_file": 21
+    },
+    "1987": {
+      "total": 5,
+      "html_file": 5
+    },
+    "1988": {
+      "total": 60,
+      "html_file": 58,
+      "pdf_200": 2
+    },
+    "1989": {
+      "total": 443,
+      "html_file": 431,
+      "pdf_200": 12
+    },
+    "1990": {
+      "total": 306,
+      "html_file": 297,
+      "pdf_200": 9
+    },
+    "1991": {
+      "total": 699,
+      "html_file": 683,
+      "pdf_200": 16
+    },
+    "1992": {
+      "total": 470,
+      "html_file": 456,
+      "pdf_200": 14
+    },
+    "1993": {
+      "total": 461,
+      "html_file": 450,
+      "pdf_200": 11
+    },
+    "1994": {
+      "total": 526,
+      "html_file": 511,
+      "pdf_200": 15
+    },
+    "1995": {
+      "total": 1421,
+      "html_file": 1378,
+      "pdf_200": 43
+    },
+    "1996": {
+      "total": 1169,
+      "html_file": 1155,
+      "pdf_200": 14
+    },
+    "1997": {
+      "total": 1669,
+      "html_file": 1624,
+      "pdf_200": 45
+    },
+    "1998": {
+      "total": 1319,
+      "html_file": 1291,
+      "pdf_200": 28
+    },
+    "1999": {
+      "total": 6419,
+      "pdf_200": 108,
+      "html_file": 6305
+    },
+    "2000": {
+      "total": 7309,
+      "html_file": 6946,
+      "pdf_200": 353
+    },
+    "2001": {
+      "total": 12679,
+      "html_file": 8397,
+      "pdf_200": 4282
+    },
+    "2002": {
+      "total": 16042,
+      "pdf_200": 8088,
+      "html_file": 7936
+    },
+    "2003": {
+      "total": 30850,
+      "pdf_200": 22714,
+      "html_file": 7893
+    },
+    "2004": {
+      "total": 23381,
+      "pdf_200": 17547,
+      "html_file": 5732
+    },
+    "2005": {
+      "total": 25352,
+      "html_file": 5913,
+      "pdf_200": 19350
+    },
+    "2006": {
+      "total": 20251,
+      "pdf_200": 18248,
+      "html_file": 1968
+    },
+    "2007": {
+      "total": 30515,
+      "pdf_200": 27427,
+      "html_file": 2998
+    },
+    "2008": {
+      "total": 28543,
+      "pdf_200": 25091,
+      "html_file": 3396
+    },
+    "2009": {
+      "total": 29578,
+      "html_file": 3966,
+      "pdf_200": 25495
+    },
+    "2010": {
+      "total": 17324,
+      "pdf_200": 14550,
+      "html_file": 2726
+    },
+    "2011": {
+      "total": 32151,
+      "pdf_200": 28920,
+      "html_file": 3110
+    },
+    "2012": {
+      "total": 22451,
+      "pdf_200": 20334,
+      "html_file": 2068
+    },
+    "2013": {
+      "total": 27787,
+      "pdf_200": 24567,
+      "html_file": 3050
+    },
+    "2014": {
+      "total": 16102,
+      "pdf_200": 14572,
+      "html_file": 1445
+    },
+    "2015": {
+      "total": 37149,
+      "pdf_200": 33759,
+      "html_file": 3120
+    },
+    "2016": {
+      "total": 23195,
+      "pdf_200": 21454,
+      "html_file": 1696
+    },
+    "2017": {
+      "total": 30338,
+      "pdf_200": 27593,
+      "html_file": 2708
+    },
+    "2018": {
+      "total": 17259,
+      "html_file": 1493,
+      "pdf_200": 15748
+    },
+    "2019": {
+      "total": 36433,
+      "html_file": 2560,
+      "pdf_200": 33833
+    },
+    "2020": {
+      "total": 29752,
+      "pdf_200": 29700,
+      "html_file": 1
+    },
+    "2021": {
+      "total": 37693,
+      "pdf_200": 37637,
+      "html_file": 6
+    },
+    "2022": {
+      "total": 25589,
+      "html_file": 2,
+      "pdf_200": 25551
+    },
+    "2023": {
+      "total": 59161,
+      "pdf_200": 59053,
+      "html_file": 3
+    },
+    "2024": {
+      "total": 58487,
+      "pdf_200": 58327,
+      "html_file": 3
+    },
+    "2025": {
+      "total": 103303,
+      "pdf_200": 103265,
+      "html_file": 1
+    },
+    "2026": {
+      "total": 42979,
+      "pdf_200": 42975,
+      "html_file": 1
+    }
+  },
+  "comparison": {
+    "own_seen_present_friend": 210837,
+    "own_valid_keys": 185969,
+    "own_valid_present_friend": 185969,
+    "own_valid_friend_not_pdf_200": 3963,
+    "own_valid_friend_pdf_200": 182006,
+    "own_valid_friend_pdf_same_size": 182006,
+    "own_seen_keys": 210837,
+    "friend_only_vs_own_seen": 646058
+  },
+  "comparison_by_year": {
+    "1934": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1935": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1946": {
+      "own_seen": 42,
+      "friend_present": 42,
+      "own_valid": 41,
+      "friend_not_pdf_200": 41
+    },
+    "1947": {
+      "own_seen": 4,
+      "friend_present": 4,
+      "own_valid": 4,
+      "friend_not_pdf_200": 4
+    },
+    "1948": {
+      "own_seen": 4,
+      "friend_present": 4,
+      "own_valid": 4,
+      "friend_not_pdf_200": 3,
+      "friend_pdf_200": 1,
+      "same_size": 1
+    },
+    "1949": {
+      "own_seen": 3,
+      "friend_present": 3,
+      "own_valid": 3,
+      "friend_not_pdf_200": 3
+    },
+    "1950": {
+      "own_seen": 2,
+      "friend_present": 2,
+      "own_valid": 2,
+      "friend_not_pdf_200": 2
+    },
+    "1951": {
+      "own_seen": 3,
+      "friend_present": 3,
+      "own_valid": 3,
+      "friend_not_pdf_200": 3
+    },
+    "1952": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1953": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1954": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1955": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_pdf_200": 1,
+      "same_size": 1
+    },
+    "1956": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1957": {
+      "own_seen": 2,
+      "friend_present": 2,
+      "own_valid": 2,
+      "friend_not_pdf_200": 2
+    },
+    "1958": {
+      "own_seen": 2,
+      "friend_present": 2,
+      "own_valid": 2,
+      "friend_not_pdf_200": 2
+    },
+    "1959": {
+      "own_seen": 2,
+      "friend_present": 2,
+      "own_valid": 2,
+      "friend_not_pdf_200": 1,
+      "friend_pdf_200": 1,
+      "same_size": 1
+    },
+    "1960": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1961": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1962": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1963": {
+      "own_seen": 3,
+      "friend_present": 3,
+      "own_valid": 3,
+      "friend_not_pdf_200": 3
+    },
+    "1964": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1965": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1966": {
+      "own_seen": 8,
+      "friend_present": 8,
+      "own_valid": 7,
+      "friend_not_pdf_200": 7
+    },
+    "1967": {
+      "own_seen": 15,
+      "friend_present": 15,
+      "own_valid": 15,
+      "friend_not_pdf_200": 15
+    },
+    "1968": {
+      "own_seen": 11,
+      "friend_present": 11,
+      "own_valid": 10,
+      "friend_not_pdf_200": 10
+    },
+    "1970": {
+      "own_seen": 3,
+      "friend_present": 3,
+      "own_valid": 3,
+      "friend_not_pdf_200": 3
+    },
+    "1971": {
+      "own_seen": 5,
+      "friend_present": 5,
+      "own_valid": 5,
+      "friend_not_pdf_200": 5
+    },
+    "1972": {
+      "own_seen": 9,
+      "friend_present": 9,
+      "own_valid": 9,
+      "friend_not_pdf_200": 9
+    },
+    "1973": {
+      "own_seen": 6,
+      "friend_present": 6,
+      "own_valid": 5,
+      "friend_not_pdf_200": 5
+    },
+    "1974": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1975": {
+      "own_seen": 31,
+      "friend_present": 31,
+      "own_valid": 25,
+      "friend_not_pdf_200": 25
+    },
+    "1976": {
+      "own_seen": 22,
+      "friend_present": 22,
+      "own_valid": 22,
+      "friend_not_pdf_200": 22
+    },
+    "1978": {
+      "own_seen": 7,
+      "friend_present": 7,
+      "own_valid": 7,
+      "friend_not_pdf_200": 7
+    },
+    "1979": {
+      "own_seen": 11,
+      "friend_present": 11,
+      "own_valid": 11,
+      "friend_not_pdf_200": 11
+    },
+    "1980": {
+      "own_seen": 2,
+      "friend_present": 2,
+      "own_valid": 2,
+      "friend_not_pdf_200": 2
+    },
+    "1981": {
+      "own_seen": 2,
+      "friend_present": 2,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1982": {
+      "own_seen": 1,
+      "friend_present": 1,
+      "own_valid": 1,
+      "friend_not_pdf_200": 1
+    },
+    "1983": {
+      "own_seen": 12,
+      "friend_present": 12,
+      "own_valid": 12,
+      "friend_not_pdf_200": 12
+    },
+    "1984": {
+      "own_seen": 18,
+      "friend_present": 18,
+      "own_valid": 18,
+      "friend_not_pdf_200": 18
+    },
+    "1985": {
+      "own_seen": 11,
+      "friend_present": 11,
+      "own_valid": 11,
+      "friend_not_pdf_200": 11
+    },
+    "1986": {
+      "own_seen": 21,
+      "friend_present": 21,
+      "own_valid": 21,
+      "friend_not_pdf_200": 21
+    },
+    "1987": {
+      "own_seen": 5,
+      "friend_present": 5,
+      "own_valid": 5,
+      "friend_not_pdf_200": 5
+    },
+    "1988": {
+      "own_seen": 60,
+      "friend_present": 60,
+      "own_valid": 59,
+      "friend_not_pdf_200": 57,
+      "friend_pdf_200": 2,
+      "same_size": 2
+    },
+    "1989": {
+      "own_seen": 443,
+      "friend_present": 443,
+      "own_valid": 414,
+      "friend_not_pdf_200": 402,
+      "friend_pdf_200": 12,
+      "same_size": 12
+    },
+    "1990": {
+      "own_seen": 306,
+      "friend_present": 306,
+      "own_valid": 292,
+      "friend_not_pdf_200": 283,
+      "friend_pdf_200": 9,
+      "same_size": 9
+    },
+    "1991": {
+      "own_seen": 699,
+      "friend_present": 699,
+      "own_valid": 646,
+      "friend_not_pdf_200": 630,
+      "friend_pdf_200": 16,
+      "same_size": 16
+    },
+    "1992": {
+      "own_seen": 470,
+      "friend_present": 470,
+      "own_valid": 433,
+      "friend_not_pdf_200": 419,
+      "friend_pdf_200": 14,
+      "same_size": 14
+    },
+    "1993": {
+      "own_seen": 461,
+      "friend_present": 461,
+      "own_valid": 378,
+      "friend_not_pdf_200": 367,
+      "friend_pdf_200": 11,
+      "same_size": 11
+    },
+    "1994": {
+      "own_seen": 526,
+      "friend_present": 526,
+      "own_valid": 444,
+      "friend_not_pdf_200": 429,
+      "friend_pdf_200": 15,
+      "same_size": 15
+    },
+    "1995": {
+      "own_seen": 1421,
+      "friend_present": 1421,
+      "own_valid": 652,
+      "friend_not_pdf_200": 609,
+      "friend_pdf_200": 43,
+      "same_size": 43
+    },
+    "1996": {
+      "own_seen": 1169,
+      "friend_present": 1169,
+      "own_valid": 14,
+      "friend_pdf_200": 14,
+      "same_size": 14
+    },
+    "1997": {
+      "own_seen": 1669,
+      "friend_present": 1669,
+      "own_valid": 45,
+      "friend_pdf_200": 45,
+      "same_size": 45
+    },
+    "1998": {
+      "own_seen": 1319,
+      "friend_present": 1319,
+      "own_valid": 28,
+      "friend_pdf_200": 28,
+      "same_size": 28
+    },
+    "1999": {
+      "own_seen": 6419,
+      "friend_present": 6419,
+      "own_valid": 114,
+      "friend_pdf_200": 108,
+      "same_size": 108,
+      "friend_not_pdf_200": 6
+    },
+    "2000": {
+      "own_seen": 4990,
+      "friend_present": 4990,
+      "own_valid": 25,
+      "friend_pdf_200": 25,
+      "same_size": 25
+    },
+    "2024": {
+      "own_seen": 58489,
+      "friend_present": 58489,
+      "own_valid": 58233,
+      "friend_pdf_200": 58233,
+      "same_size": 58233
+    },
+    "2023": {
+      "own_seen": 59161,
+      "friend_present": 59161,
+      "own_valid": 59153,
+      "friend_pdf_200": 59053,
+      "same_size": 59053,
+      "friend_not_pdf_200": 100
+    },
+    "2022": {
+      "own_seen": 25592,
+      "friend_present": 25592,
+      "own_valid": 25420,
+      "friend_pdf_200": 25382,
+      "same_size": 25382,
+      "friend_not_pdf_200": 38
+    },
+    "2021": {
+      "own_seen": 37694,
+      "friend_present": 37694,
+      "own_valid": 37270,
+      "friend_pdf_200": 37222,
+      "same_size": 37222,
+      "friend_not_pdf_200": 48
+    },
+    "2001": {
+      "own_seen": 9669,
+      "friend_present": 9669,
+      "own_valid": 2080,
+      "friend_not_pdf_200": 309,
+      "friend_pdf_200": 1771,
+      "same_size": 1771
+    }
+  },
+  "size_difference_examples": [],
+  "own_valid_friend_nonpdf_types": {
+    "('outro', '.html')": 3773,
+    "('outro', '.doc')": 190
+  },
+  "own_valid_friend_nonpdf_examples": [
+    {
+      "key": "camara:codteor:913518",
+      "friend": {
+        "ano": "1934",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=913518",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1205",
+        "segundos_download": "1.2336790000554174",
+        "segundos_persistencia": "0.002034299774095416",
+        "arquivo": "documentos\\7b6768d0f03eba9f8ef1b1220120a3d6bb1fcf58cc13e4054f88eaceeea7bd3c.html"
+      },
+      "own_sizes": [
+        2424209
+      ]
+    },
+    {
+      "key": "camara:codteor:451448",
+      "friend": {
+        "ano": "1935",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=451448",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1205",
+        "segundos_download": "1.2590255001559854",
+        "segundos_persistencia": "0.0014446000568568707",
+        "arquivo": "documentos\\21a5f0bd85fb8a0e07ea817e1534ac52a73f39651d810f04534cb4c460dbf2ec.html"
+      },
+      "own_sizes": [
+        9392386
+      ]
+    },
+    {
+      "key": "camara:codteor:839528",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839528",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.237226199824363",
+        "segundos_persistencia": "0.001455900026485324",
+        "arquivo": "documentos\\8bbd68d1f9bb39a018e10979162ae60dc8310283134f15a28935302bc72fae5c.html"
+      },
+      "own_sizes": [
+        5725201
+      ]
+    },
+    {
+      "key": "camara:codteor:839547",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839547",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.1784603998530656",
+        "segundos_persistencia": "0.0007363997865468264",
+        "arquivo": "documentos\\43da25fafd996b5a9a926444f73fe34508c3ee53e85092bee04dc138634a52d6.html"
+      },
+      "own_sizes": [
+        5725201
+      ]
+    },
+    {
+      "key": "camara:codteor:839569",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839569",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.046333499951288",
+        "segundos_persistencia": "0.0021964998450130224",
+        "arquivo": "documentos\\7b7eb79d469f364a67a602d0505981bf6c550313ecd621ea0e6118aa164f266e.html"
+      },
+      "own_sizes": [
+        5725201
+      ]
+    },
+    {
+      "key": "camara:codteor:839581",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839581",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.1727605001069605",
+        "segundos_persistencia": "0.0017454000189900398",
+        "arquivo": "documentos\\18168c094130c8d604e2c17e53cf198cf5632b71ff7387798d17915314798d42.html"
+      },
+      "own_sizes": [
+        5725201
+      ]
+    },
+    {
+      "key": "camara:codteor:839590",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839590",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.2217731999699026",
+        "segundos_persistencia": "0.0008128001354634762",
+        "arquivo": "documentos\\8772ff9afaf1764fa89ce50df6ec9dfadc4c4ab21569dc0dc7d237faea4ac16f.html"
+      },
+      "own_sizes": [
+        5725201
+      ]
+    },
+    {
+      "key": "camara:codteor:839697",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839697",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.1926673999987543",
+        "segundos_persistencia": "0.002504900097846985",
+        "arquivo": "documentos\\6158425241820a3ae5b328a8286902f2f870f2af7c48c4668bf66b426428f045.html"
+      },
+      "own_sizes": [
+        8671299
+      ]
+    },
+    {
+      "key": "camara:codteor:839701",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839701",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.221259200014174",
+        "segundos_persistencia": "0.0011562998406589031",
+        "arquivo": "documentos\\35889ed15d5175b2cef68e0a5bc7470205a388b57986c267f68d379f6857e3ca.html"
+      },
+      "own_sizes": [
+        8671299
+      ]
+    },
+    {
+      "key": "camara:codteor:839711",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839711",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.1902324000839144",
+        "segundos_persistencia": "0.0027169999666512012",
+        "arquivo": "documentos\\841e66bb27809a31f384b2bdc0b0e9135aaa5094bb0690faa90c6880b609f5bb.html"
+      },
+      "own_sizes": [
+        8671299
+      ]
+    },
+    {
+      "key": "camara:codteor:839726",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839726",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.2396672000177205",
+        "segundos_persistencia": "0.0007452000863850117",
+        "arquivo": "documentos\\e5db9236f5e787220d8a3287da97614c02c7b1fa4bd076c06cf2ea49fcc6e9fd.html"
+      },
+      "own_sizes": [
+        8671299
+      ]
+    },
+    {
+      "key": "camara:codteor:839878",
+      "friend": {
+        "ano": "1946",
+        "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=839878",
+        "status": "200",
+        "tipo": "outro",
+        "bytes": "1204",
+        "segundos_download": "1.2617162000387907",
+        "segundos_persistencia": "0.006125400075688958",
+        "arquivo": "documentos\\759825378efcf2604a24130b3bfafa506263eb33f190f4c48912eaf593707800.html"
+      },
+      "own_sizes": [
+        8671299
+      ]
+    }
+  ],
+  "journal_lines_read": 52525,
+  "journal_invalid_lines": 0,
+  "zip_members": [
+    {
+      "name": "proposicoes-2026.csv",
+      "bytes": 39673178
+    },
+    {
+      "name": "proposicoes-1934.csv",
+      "bytes": 1153
+    },
+    {
+      "name": "proposicoes-1935.csv",
+      "bytes": 1149
+    },
+    {
+      "name": "proposicoes-1945.csv",
+      "bytes": 1248
+    },
+    {
+      "name": "proposicoes-1946.csv",
+      "bytes": 174812
+    },
+    {
+      "name": "proposicoes-1947.csv",
+      "bytes": 1282700
+    },
+    {
+      "name": "proposicoes-1948.csv",
+      "bytes": 1225981
+    },
+    {
+      "name": "proposicoes-1949.csv",
+      "bytes": 1151856
+    },
+    {
+      "name": "proposicoes-1950.csv",
+      "bytes": 927709
+    },
+    {
+      "name": "proposicoes-1951.csv",
+      "bytes": 1256627
+    },
+    {
+      "name": "proposicoes-1952.csv",
+      "bytes": 1106904
+    },
+    {
+      "name": "proposicoes-1953.csv",
+      "bytes": 1113550
+    },
+    {
+      "name": "proposicoes-1954.csv",
+      "bytes": 927373
+    },
+    {
+      "name": "proposicoes-1955.csv",
+      "bytes": 814849
+    },
+    {
+      "name": "proposicoes-1956.csv",
+      "bytes": 1127830
+    },
+    {
+      "name": "proposicoes-1957.csv",
+      "bytes": 1160953
+    },
+    {
+      "name": "proposicoes-1958.csv",
+      "bytes": 938703
+    },
+    {
+      "name": "proposicoes-1959.csv",
+      "bytes": 1218988
+    },
+    {
+      "name": "proposicoes-1960.csv",
+      "bytes": 948114
+    },
+    {
+      "name": "proposicoes-1961.csv",
+      "bytes": 1049314
+    },
+    {
+      "name": "proposicoes-1962.csv",
+      "bytes": 934621
+    },
+    {
+      "name": "proposicoes-1963.csv",
+      "bytes": 1452506
+    },
+    {
+      "name": "proposicoes-1964.csv",
+      "bytes": 868731
+    },
+    {
+      "name": "proposicoes-1965.csv",
+      "bytes": 844862
+    },
+    {
+      "name": "proposicoes-1966.csv",
+      "bytes": 691671
+    },
+    {
+      "name": "proposicoes-1967.csv",
+      "bytes": 851289
+    },
+    {
+      "name": "proposicoes-1968.csv",
+      "bytes": 1020506
+    },
+    {
+      "name": "proposicoes-1969.csv",
+      "bytes": 41878
+    },
+    {
+      "name": "proposicoes-1970.csv",
+      "bytes": 383830
+    },
+    {
+      "name": "proposicoes-1971.csv",
+      "bytes": 568779
+    },
+    {
+      "name": "proposicoes-1972.csv",
+      "bytes": 552436
+    },
+    {
+      "name": "proposicoes-1973.csv",
+      "bytes": 701361
+    },
+    {
+      "name": "proposicoes-1974.csv",
+      "bytes": 718413
+    },
+    {
+      "name": "proposicoes-1975.csv",
+      "bytes": 1541760
+    },
+    {
+      "name": "proposicoes-1976.csv",
+      "bytes": 1428190
+    },
+    {
+      "name": "proposicoes-1977.csv",
+      "bytes": 1206160
+    },
+    {
+      "name": "proposicoes-1978.csv",
+      "bytes": 1024865
+    },
+    {
+      "name": "proposicoes-1979.csv",
+      "bytes": 2214978
+    },
+    {
+      "name": "proposicoes-1980.csv",
+      "bytes": 1525673
+    },
+    {
+      "name": "proposicoes-1981.csv",
+      "bytes": 1495768
+    },
+    {
+      "name": "proposicoes-1982.csv",
+      "bytes": 951886
+    },
+    {
+      "name": "proposicoes-1983.csv",
+      "bytes": 3125166
+    },
+    {
+      "name": "proposicoes-1984.csv",
+      "bytes": 2204144
+    },
+    {
+      "name": "proposicoes-1985.csv",
+      "bytes": 2403412
+    },
+    {
+      "name": "proposicoes-1986.csv",
+      "bytes": 1830878
+    },
+    {
+      "name": "proposicoes-1987.csv",
+      "bytes": 642598
+    },
+    {
+      "name": "proposicoes-1988.csv",
+      "bytes": 1696755
+    },
+    {
+      "name": "proposicoes-1989.csv",
+      "bytes": 4959138
+    },
+    {
+      "name": "proposicoes-1990.csv",
+      "bytes": 2580222
+    },
+    {
+      "name": "proposicoes-1991.csv",
+      "bytes": 4451452
+    },
+    {
+      "name": "proposicoes-1992.csv",
+      "bytes": 2772777
+    },
+    {
+      "name": "proposicoes-1993.csv",
+      "bytes": 2787089
+    },
+    {
+      "name": "proposicoes-1994.csv",
+      "bytes": 1934185
+    },
+    {
+      "name": "proposicoes-1995.csv",
+      "bytes": 4914946
+    },
+    {
+      "name": "proposicoes-1996.csv",
+      "bytes": 3576424
+    },
+    {
+      "name": "proposicoes-1997.csv",
+      "bytes": 4310968
+    },
+    {
+      "name": "proposicoes-1998.csv",
+      "bytes": 3011954
+    },
+    {
+      "name": "proposicoes-1999.csv",
+      "bytes": 6628300
+    },
+    {
+      "name": "proposicoes-2000.csv",
+      "bytes": 6846297
+    },
+    {
+      "name": "proposicoes-2001.csv",
+      "bytes": 11636741
+    },
+    {
+      "name": "proposicoes-2002.csv",
+      "bytes": 13908250
+    },
+    {
+      "name": "proposicoes-2003.csv",
+      "bytes": 26471075
+    },
+    {
+      "name": "proposicoes-2004.csv",
+      "bytes": 20140618
+    },
+    {
+      "name": "proposicoes-2005.csv",
+      "bytes": 22247938
+    },
+    {
+      "name": "proposicoes-2006.csv",
+      "bytes": 17806724
+    },
+    {
+      "name": "proposicoes-2007.csv",
+      "bytes": 27560840
+    },
+    {
+      "name": "proposicoes-2008.csv",
+      "bytes": 25075468
+    },
+    {
+      "name": "proposicoes-2009.csv",
+      "bytes": 26982139
+    },
+    {
+      "name": "proposicoes-2010.csv",
+      "bytes": 15888349
+    },
+    {
+      "name": "proposicoes-2011.csv",
+      "bytes": 28580070
+    },
+    {
+      "name": "proposicoes-2012.csv",
+      "bytes": 19585199
+    },
+    {
+      "name": "proposicoes-2013.csv",
+      "bytes": 24332528
+    },
+    {
+      "name": "proposicoes-2014.csv",
+      "bytes": 14590520
+    },
+    {
+      "name": "proposicoes-2015.csv",
+      "bytes": 34170528
+    },
+    {
+      "name": "proposicoes-2016.csv",
+      "bytes": 21375725
+    },
+    {
+      "name": "proposicoes-2017.csv",
+      "bytes": 27697571
+    },
+    {
+      "name": "proposicoes-2018.csv",
+      "bytes": 16246521
+    },
+    {
+      "name": "proposicoes-2019.csv",
+      "bytes": 33296626
+    },
+    {
+      "name": "proposicoes-2020.csv",
+      "bytes": 25258909
+    },
+    {
+      "name": "proposicoes-2021.csv",
+      "bytes": 34593642
+    },
+    {
+      "name": "proposicoes-2022.csv",
+      "bytes": 23193610
+    },
+    {
+      "name": "proposicoes-2023.csv",
+      "bytes": 52260065
+    },
+    {
+      "name": "proposicoes-2024.csv",
+      "bytes": 53087588
+    },
+    {
+      "name": "proposicoes-2025.csv",
+      "bytes": 90185435
+    }
+  ]
+}

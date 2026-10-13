@@ -1,0 +1,391 @@
+{
+  "friend_rows": 856904,
+  "friend_unique_document_keys": 856895,
+  "duplicate_rows": 9,
+  "friend_valid_sha_rows": 856901,
+  "friend_invalid_sha_rows": 3,
+  "friend_positive_size_rows": 856825,
+  "distinct_friend_content_hashes": 848030,
+  "content_hashes_duplicated_across_rows": 8871,
+  "content_hashes_used_by_multiple_rows": 5397,
+  "own_unique_urls_seen": 210837,
+  "own_documents_with_valid_sha": 185969,
+  "own_versions_with_hash": 185969,
+  "friend_keys_with_own_valid_content": 185969,
+  "exact_hash_match_same_document": 182197,
+  "different_hash_same_document": 3772,
+  "friend_keys_absent_from_own_valid": 670926,
+  "hash_diff_types": {
+    "('outro', '.html')": 3772
+  },
+  "hash_diff_examples": [
+    {
+      "key": "camara:codteor:913518",
+      "friend_sha": "8ebaaa845a6e89617ae1a321b94935510027982739da2f983655457efdabff12",
+      "own_sha": [
+        "4b4520176c194461327210c33340b016f0c37ee6a5c1bc3186016cd42317ac8e"
+      ],
+      "size": "1205",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\7b6768d0f03eba9f8ef1b1220120a3d6bb1fcf58cc13e4054f88eaceeea7bd3c.html"
+    },
+    {
+      "key": "camara:codteor:451448",
+      "friend_sha": "43252348eea0f61470a1b49c498463948e6c631fd88364884881a8b32587dd6b",
+      "own_sha": [
+        "ca234db0b0cd24688c4e10d87e94166063b86b35805123c580c7b91b5b076227"
+      ],
+      "size": "1205",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\21a5f0bd85fb8a0e07ea817e1534ac52a73f39651d810f04534cb4c460dbf2ec.html"
+    },
+    {
+      "key": "camara:codteor:839528",
+      "friend_sha": "0b04f7c05906d7401bd1b37e80a0700d0012c78e4cc9dcd6228b18dd843a930f",
+      "own_sha": [
+        "6585059d649fb58debb80156240962c8568a39bd531b5127d509c4815e8702e9"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\8bbd68d1f9bb39a018e10979162ae60dc8310283134f15a28935302bc72fae5c.html"
+    },
+    {
+      "key": "camara:codteor:839547",
+      "friend_sha": "3370b5295c9bb62532fd28cfca194f6680d9f68a267bc22e9f2a73fb975dd7ce",
+      "own_sha": [
+        "6585059d649fb58debb80156240962c8568a39bd531b5127d509c4815e8702e9"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\43da25fafd996b5a9a926444f73fe34508c3ee53e85092bee04dc138634a52d6.html"
+    },
+    {
+      "key": "camara:codteor:839569",
+      "friend_sha": "3370b5295c9bb62532fd28cfca194f6680d9f68a267bc22e9f2a73fb975dd7ce",
+      "own_sha": [
+        "6585059d649fb58debb80156240962c8568a39bd531b5127d509c4815e8702e9"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\7b7eb79d469f364a67a602d0505981bf6c550313ecd621ea0e6118aa164f266e.html"
+    },
+    {
+      "key": "camara:codteor:839581",
+      "friend_sha": "0b04f7c05906d7401bd1b37e80a0700d0012c78e4cc9dcd6228b18dd843a930f",
+      "own_sha": [
+        "6585059d649fb58debb80156240962c8568a39bd531b5127d509c4815e8702e9"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\18168c094130c8d604e2c17e53cf198cf5632b71ff7387798d17915314798d42.html"
+    },
+    {
+      "key": "camara:codteor:839590",
+      "friend_sha": "dfc85b90f589af06ab4bf903664b3ff08dae8ee3beed8247bf0fee070f9a6cef",
+      "own_sha": [
+        "6585059d649fb58debb80156240962c8568a39bd531b5127d509c4815e8702e9"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\8772ff9afaf1764fa89ce50df6ec9dfadc4c4ab21569dc0dc7d237faea4ac16f.html"
+    },
+    {
+      "key": "camara:codteor:839697",
+      "friend_sha": "a5b37258549c104870a40ede42c918949f01cbd6c7811083e93e71af9030551b",
+      "own_sha": [
+        "b2b212a3e41d142aeafd25a8bc2adcf423cb80d9b58fc275966ab39e109abd37"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\6158425241820a3ae5b328a8286902f2f870f2af7c48c4668bf66b426428f045.html"
+    },
+    {
+      "key": "camara:codteor:839701",
+      "friend_sha": "a5b37258549c104870a40ede42c918949f01cbd6c7811083e93e71af9030551b",
+      "own_sha": [
+        "b2b212a3e41d142aeafd25a8bc2adcf423cb80d9b58fc275966ab39e109abd37"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\35889ed15d5175b2cef68e0a5bc7470205a388b57986c267f68d379f6857e3ca.html"
+    },
+    {
+      "key": "camara:codteor:839711",
+      "friend_sha": "a5b37258549c104870a40ede42c918949f01cbd6c7811083e93e71af9030551b",
+      "own_sha": [
+        "b2b212a3e41d142aeafd25a8bc2adcf423cb80d9b58fc275966ab39e109abd37"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\841e66bb27809a31f384b2bdc0b0e9135aaa5094bb0690faa90c6880b609f5bb.html"
+    },
+    {
+      "key": "camara:codteor:839726",
+      "friend_sha": "18c6bb935e336d9ee278801b8c855971bd9b950a5be5d1a2444223035aac398f",
+      "own_sha": [
+        "b2b212a3e41d142aeafd25a8bc2adcf423cb80d9b58fc275966ab39e109abd37"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\e5db9236f5e787220d8a3287da97614c02c7b1fa4bd076c06cf2ea49fcc6e9fd.html"
+    },
+    {
+      "key": "camara:codteor:839878",
+      "friend_sha": "18c6bb935e336d9ee278801b8c855971bd9b950a5be5d1a2444223035aac398f",
+      "own_sha": [
+        "b2b212a3e41d142aeafd25a8bc2adcf423cb80d9b58fc275966ab39e109abd37"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\759825378efcf2604a24130b3bfafa506263eb33f190f4c48912eaf593707800.html"
+    },
+    {
+      "key": "camara:codteor:839891",
+      "friend_sha": "c348778f967cd1ad5f0e8eca2c77af98431bea1fac030b736eafbd9c2ee429b6",
+      "own_sha": [
+        "7bbc4065a7fa8e5c23c802e5751cf449a43d0d9ecd2c84b10253a3a75ac26a08"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\dfae38952bb34bf0403531c1505e264210600521faac1a7f14a06f73d4a5dbbf.html"
+    },
+    {
+      "key": "camara:codteor:839899",
+      "friend_sha": "c348778f967cd1ad5f0e8eca2c77af98431bea1fac030b736eafbd9c2ee429b6",
+      "own_sha": [
+        "7bbc4065a7fa8e5c23c802e5751cf449a43d0d9ecd2c84b10253a3a75ac26a08"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\4e1518bc25206fc06b67217d750733db785bda63faaa50b05e005bf2383ecaf0.html"
+    },
+    {
+      "key": "camara:codteor:839902",
+      "friend_sha": "c348778f967cd1ad5f0e8eca2c77af98431bea1fac030b736eafbd9c2ee429b6",
+      "own_sha": [
+        "7bbc4065a7fa8e5c23c802e5751cf449a43d0d9ecd2c84b10253a3a75ac26a08"
+      ],
+      "size": "1204",
+      "type": "outro",
+      "status": "200",
+      "path": "documentos\\8123cae7da8071dbc86c252c8737a2c21018644639b530cb8e0c5afa58002dfb.html"
+    }
+  ],
+  "by_friend_year": {
+    "1934": {
+      "different": 1
+    },
+    "1935": {
+      "different": 1
+    },
+    "1946": {
+      "different": 41
+    },
+    "1947": {
+      "different": 4
+    },
+    "1948": {
+      "different": 3,
+      "exact": 1
+    },
+    "1949": {
+      "different": 3
+    },
+    "1950": {
+      "different": 2
+    },
+    "1951": {
+      "different": 3
+    },
+    "1952": {
+      "different": 1
+    },
+    "1953": {
+      "different": 1
+    },
+    "1954": {
+      "different": 1
+    },
+    "1955": {
+      "exact": 1
+    },
+    "1956": {
+      "different": 1
+    },
+    "1957": {
+      "different": 2
+    },
+    "1958": {
+      "different": 2
+    },
+    "1959": {
+      "different": 1,
+      "exact": 1
+    },
+    "1960": {
+      "different": 1
+    },
+    "1961": {
+      "different": 1
+    },
+    "1962": {
+      "different": 1
+    },
+    "1963": {
+      "different": 3
+    },
+    "1964": {
+      "different": 1
+    },
+    "1965": {
+      "different": 1
+    },
+    "1966": {
+      "different": 7
+    },
+    "1967": {
+      "different": 15
+    },
+    "1968": {
+      "different": 10
+    },
+    "1970": {
+      "different": 3
+    },
+    "1971": {
+      "different": 5
+    },
+    "1972": {
+      "different": 9
+    },
+    "1973": {
+      "different": 5
+    },
+    "1974": {
+      "different": 1
+    },
+    "1975": {
+      "different": 25
+    },
+    "1976": {
+      "different": 22
+    },
+    "1978": {
+      "different": 7
+    },
+    "1979": {
+      "different": 11
+    },
+    "1980": {
+      "different": 2
+    },
+    "1981": {
+      "different": 1
+    },
+    "1982": {
+      "different": 1
+    },
+    "1983": {
+      "different": 12
+    },
+    "1984": {
+      "different": 18
+    },
+    "1985": {
+      "different": 11
+    },
+    "1986": {
+      "different": 21
+    },
+    "1987": {
+      "different": 5
+    },
+    "1988": {
+      "different": 57,
+      "exact": 2
+    },
+    "1989": {
+      "different": 402,
+      "exact": 12
+    },
+    "1990": {
+      "different": 283,
+      "exact": 9
+    },
+    "1991": {
+      "different": 630,
+      "exact": 16
+    },
+    "1992": {
+      "different": 419,
+      "exact": 14
+    },
+    "1993": {
+      "different": 367,
+      "exact": 11
+    },
+    "1994": {
+      "different": 429,
+      "exact": 15
+    },
+    "1995": {
+      "different": 609,
+      "exact": 43
+    },
+    "1996": {
+      "exact": 14
+    },
+    "1997": {
+      "exact": 45
+    },
+    "1998": {
+      "exact": 28
+    },
+    "1999": {
+      "exact": 114
+    },
+    "2000": {
+      "exact": 25
+    },
+    "2001": {
+      "different": 309,
+      "exact": 1771
+    },
+    "2012": {
+      "exact": 1
+    },
+    "2013": {
+      "exact": 1
+    },
+    "2019": {
+      "exact": 2
+    },
+    "2021": {
+      "exact": 37269
+    },
+    "2022": {
+      "different": 1,
+      "exact": 25416
+    },
+    "2023": {
+      "exact": 59153
+    },
+    "2024": {
+      "exact": 58233
+    }
+  }
+}

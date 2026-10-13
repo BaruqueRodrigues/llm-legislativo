@@ -1,0 +1,110 @@
+{
+  "rows_sha_index": 856904,
+  "rows_tar_index": 856904,
+  "rows_manifest": 856904,
+  "unique_urls_tar_index": 856895,
+  "status_counts": {
+    "listado": 856901,
+    "sem_arquivo": 3
+  },
+  "part_count": 44,
+  "rows_per_tar": {
+    "": 3,
+    "part001.tar": 20000,
+    "part002.tar": 20000,
+    "part003.tar": 20000,
+    "part004.tar": 20000,
+    "part005.tar": 20000,
+    "part006.tar": 20000,
+    "part007.tar": 20000,
+    "part008.tar": 20000,
+    "part009.tar": 20000,
+    "part010.tar": 20000,
+    "part011.tar": 20000,
+    "part012.tar": 20000,
+    "part013.tar": 20000,
+    "part014.tar": 20000,
+    "part015.tar": 20000,
+    "part016.tar": 20000,
+    "part017.tar": 20000,
+    "part018.tar": 20000,
+    "part019.tar": 20000,
+    "part020.tar": 20000,
+    "part021.tar": 20000,
+    "part022.tar": 20000,
+    "part023.tar": 20000,
+    "part024.tar": 20000,
+    "part025.tar": 20000,
+    "part026.tar": 20000,
+    "part027.tar": 20000,
+    "part028.tar": 20000,
+    "part029.tar": 20000,
+    "part030.tar": 20000,
+    "part031.tar": 20000,
+    "part032.tar": 20000,
+    "part033.tar": 20000,
+    "part034.tar": 20000,
+    "part035.tar": 20000,
+    "part036.tar": 20000,
+    "part037.tar": 20000,
+    "part038.tar": 20000,
+    "part039.tar": 20000,
+    "part040.tar": 20000,
+    "part041.tar": 20000,
+    "part042.tar": 20000,
+    "part043.tar": 16901
+  },
+  "issues": {
+    "sha_differs": 9,
+    "member_size_differs_from_hash_index": 9,
+    "member_hash_malformed": 3,
+    "offset_malformed": 3,
+    "status_not_listado": 3,
+    "empty_member": 3,
+    "bad_size": 3,
+    "size_differs_manifest": 6
+  },
+  "issue_examples": {
+    "sha_differs": [
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126428",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126476",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2225083",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126436",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126454"
+    ],
+    "member_size_differs_from_hash_index": [
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126428",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126476",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2225083",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126436",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126454"
+    ],
+    "member_hash_malformed": [
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126428",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126476",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2225083"
+    ],
+    "offset_malformed": [
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126428",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126476",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2225083"
+    ],
+    "status_not_listado": [
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126428",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126476",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2225083"
+    ],
+    "empty_member": [
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126428",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126476",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2225083"
+    ],
+    "size_differs_manifest": [
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126436",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126454",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126461",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126470",
+      "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=1126475"
+    ]
+  }
+}
