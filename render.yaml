@@ -1,0 +1,22 @@
+# Blueprint do Render (https://render.com/docs/blueprint-spec).
+# Este arquivo fica na raiz do repositório; o serviço é construído a partir
+# do Dockerfile em ./serving (FastAPI que serve BaruqRodrigues/llm-legislativo).
+services:
+  - type: web
+    name: llm-legislativo-api
+    runtime: docker
+    dockerfilePath: ./serving/Dockerfile
+    dockerContext: ./serving
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: MODEL_REPO
+        value: BaruqRodrigues/llm-legislativo
+      - key: MAX_NEW_TOKENS_CAP
+        value: "256"
+      - key: ALLOW_ORIGINS
+        value: "*"
+      # Defina o valor como secret no dashboard (Settings -> Environment).
+      - key: API_TOKEN
+        sync: false
