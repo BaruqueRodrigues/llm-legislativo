@@ -84,6 +84,8 @@ class GPTConfig:
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> GPTConfig:
         """Instancia GPTConfig a partir de um dicionário, filtrando chaves não pertencentes."""
+        if not isinstance(data, dict):
+            raise ValueError("A configuração do modelo deve ser um mapeamento YAML.")
         valid_keys = {
             "vocab_size",
             "context_length",
@@ -107,8 +109,12 @@ class GPTConfig:
         p = Path(path)
         with open(p, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
+        if not isinstance(data, dict):
+            raise ValueError(f"A configuração em {p} deve conter um mapeamento YAML.")
         # Se contiver chave aninhada 'model', extrai dela
-        if isinstance(data, dict) and "model" in data and isinstance(data["model"], dict):
+        if "model" in data:
             model_data = data["model"]
-            return cls.from_dict(model_data)
+            if not isinstance(model_data, dict):
+                raise ValueError(f"A seção 'model' em {p} deve conter um mapeamento YAML.")
+            data = model_data
         return cls.from_dict(data)
